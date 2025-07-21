@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <table class="main-table">
+      <tr>
+        <td colspan=3 class="header">My Website</td>
+      </tr>
+      <tr>
+        <td colspan=3 class="menu">
+      <a href="index.html">HOME</a> | 
+      <a href="portfolio.html">PORTFOLIO</a> | 
+      <a href="game.html">GAME</a></td>
+      </tr>
+      <tr>
+        <td class="content-cell">
+          <h3>Useful Educational Links</h3>
+          <ul>
+          <li><a href="https://cs50.harvard.edu/" target="_blank">CS50 by Harvard</a> - One of the best intro computer science courses online.</li>
+          <li><a href="https://khanacademy.com" target="_blank">Khan Academy</a> – Free lessons in math, science, computing, history, and more.</li>
+          <li><a href="https://wolframalpha.com" target="_blank">Wolfram Alpha</a> – Computational engine for math, stats, chemistry, etc.</li>
+        </ul>
+        </td>
+        <td class="content-cell">
+          <h3>GAME</h3>
+          <p>This program calculates your recommended daily water intake</p>
+    <p>Enter your weight and activity level, then click CALCULATE</p>
+    
+    <form name="waterForm">
+      Weight (kg): 
+      <input type="text" name="weight" size="5">
+      <br><br>
+      
+      Activity Level:
+      <select name="activity">
+        <option value="1.2">Sedentary</option>
+        <option value="1.5">Active</option>
+        <option value="1.7">Very Active</option>
+      </select>
+      <br><br>
+      
+      <input type="button" value="CALCULATE" onclick="CalculateWater()">
+      <br><br>
+      
+      <textarea name="result" rows="3" cols="27"></textarea>
+      <br>
+      
+      <input type="reset" value="RESET">
+    </form>
+        </td>
+        <td class="content-cell">
+          <h3>Contact Me</h3>
+          <form method="post" action="mailto:ISSSEStudent123@gmail.com">
+           Name: <input type="text" size=10 maxlength=20 name="message"><br/>
+           Email: <input type="text" size=10 maxlength=20 name="message"><br/>
+            <textarea rows=5 cols=20 name="comments"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </td>
+      </tr>
+      <tr>
+        <td colspan=3 class="footer"> Date of Creation: 21/7/2025 | <a href="https://play.tetris.com/" target="_blank">Tetris</a></td>
+      </tr>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
